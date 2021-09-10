@@ -1,0 +1,146 @@
+/* GENERAL */
+body {
+  background-color: hsl(235, 21%, 11%);
+  color: white;
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+  background-image: url("../images/bg-mobile-dark.jpg");
+  background-repeat: no-repeat;
+}
+main {
+  max-width: 600px;
+  margin: 10% auto;
+}
+/* Main styling  */
+h1 {
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 15px;
+  margin-bottom: 40px;
+}
+.inputField {
+  width: 80%;
+  border: none;
+  padding: 15px 10%;
+  border-radius: 5px;
+  color: hsl(234, 39%, 85%);
+  font-family: "Josefin Sans", sans-serif;
+  background-color: hsl(235, 24%, 19%);
+  margin-bottom: 20px;
+}
+
+/* FOOTER  */
+
+.display__radio {
+  position: absolute;
+  visibility: hidden;
+}
+.radio__label {
+  cursor: pointer;
+  padding: 0 5px;
+}
+.radio__label__active {
+  color: hsl(220, 98%, 61%);
+}
+.clear__container {
+  background-color: hsl(235, 24%, 19%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: hsl(234, 11%, 52%);
+}
+
+.radio__container {
+  background-color: hsl(235, 24%, 19%);
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  color: hsl(234, 11%, 52%);
+  text-align: center;
+}
+
+main > h3 {
+  text-align: center;
+  color: hsl(234, 11%, 52%);
+  margin-top: 40px;
+}
+.btn {
+  border: none;
+  background-color: transparent;
+  color: hsl(234, 11%, 52%);
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* LIST ITEMS  */
+.list__item {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  padding: 15px;
+  cursor: pointer;
+  text-align: left;
+  background-color: hsl(235, 24%, 19%);
+  border-bottom: 1px solid hsl(233, 14%, 35%);
+  color: hsl(234, 39%, 85%);
+  overflow: hidden;
+}
+h2 {
+  font-size: 13px;
+  padding: 0 5px;
+  position: relative;
+  top: 5px;
+}
+.list__item__completed {
+  text-decoration: line-through;
+  color: hsl(234, 11%, 52%);
+}
+
+.checkbox {
+  box-sizing: border-box;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  border: 1px solid hsl(234, 11%, 52%);
+}
+
+.checkbox:hover {
+  cursor: pointer;
+  border: 1px solid #8c9bf9;
+}
+
+.checkbox__completed {
+  background-image: url("../images/icon-check.svg"), linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+.delete__inner {
+  visibility: hidden;
+  height: 20px;
+  width: 20px;
+  background-image: url("../images/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  justify-self: end;
+}
+
+/* STATES  */
+.visible {
+  visibility: visible;
+  position: static;
+}
+.hide {
+  visibility: hidden;
+  position: absolute;
+}
+
+@media (max-width: 500px) {
+  main {
+    margin: 10% 5%;
+  }
+}

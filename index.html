@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="resetStyle.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TO_DO</title>
+  </head>
+  <body>
+    <main>
+      <h1>TODO <span class="themeSwitch"></span></h1>
+      <input type="text" name="toDoInputField" id="toDo" class="inputField" placeholder="Create a new todo..." />
+      <div class="listBox"></div>
+      <div class="footer">
+        <div class="clear__container">
+          <h3><span class="no__items">0</span> items left</h3>
+          <!-- Button for clearing Completed entries  -->
+          <button class="btn clear__completed">Clear Completed</button>
+        </div>
+        <!-- Radio for choosing the displayed entries -->
+        <div class="radio__container">
+          <label class="radio__label" for="All">All</label>
+          <input class="display__radio" type="radio" name="display" id="All" checked />
+          <label class="radio__label" for="Active">Active</label>
+          <input class="display__radio" type="radio" name="display" id="Active" />
+          <label class="radio__label" for="Completed">Completed</label>
+          <input class="display__radio" type="radio" name="display" id="Completed" />
+        </div>
+      </div>
+      <h3>Drag and drop to reorder list</h3>
+      <script src="app.js"></script>
+    </main>
+  </body>
+</html>
