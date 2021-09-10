@@ -8,15 +8,15 @@ https://olundir.github.io/ToDoApp/
 
 ## Plan:
 
-[*] - Input (enter) ->
-[*] - make (create new DOM element) "new ToDo" ->
+[*] - Input (enter) ->  
+[*] - make (create new DOM element) "new ToDo" ->  
 [] - store new ToDo in browser?
 
-[] - Input - limit of x amount of characters
+[] - Input - limit of x amount of characters  
 [] - Theme switcher
 
 ## Random ToDo/Ideas:
 
-[*] - change the rendered toDo to Active (from Completed as it is now)
-[*] - move the change "itemsLeftCounter" so it triggers when needed
+[*] - change the rendered toDo to Active (from Completed as it is now)  
+[*] - move the change "itemsLeftCounter" so it triggers when needed  
 [*] - BUG! with clearing the completed items
